@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(open:*)",
+      "Web(open:*)",
+      "Bash(~/.npm-global/bin/netlify login:*)",
+      "Bash(~/.npm-global/bin/netlify sites:list:*)",
+      "Bash(gs:*)",
+      "Bash(convert:*)",
+      "Bash(python3:*)",
+      "Bash(~/.npm-global/bin/netlify deploy:*)"
+    ]
+  }
+}
