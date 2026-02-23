@@ -559,7 +559,7 @@ a {
   align-items: center;
   gap: 40px;
   white-space: nowrap;
-  animation: marqueeScroll 20s linear infinite;
+  animation: marqueeScroll 50s linear infinite;
   width: max-content;
 }
 
