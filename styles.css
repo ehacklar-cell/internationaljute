@@ -1834,21 +1834,10 @@ a {
   line-height: 1;
 }
 
-/* La Colle — darker circle treatment to differentiate */
-.client-mark--la-colle .client-mark__circle {
-  border-color: var(--color-fg);
-}
-
-.client-mark--la-colle .client-mark__circle::after {
-  border-color: rgba(28, 23, 18, 0.15);
-}
-
-.client-mark--la-colle .client-mark__letter {
-  color: var(--color-fg);
-}
-
-.testimonial-card:hover .client-mark--la-colle .client-mark__circle {
-  border-color: var(--color-accent);
+/* La Colle — SVG accent on hover */
+.testimonial-card:hover .client-mark--la-colle .client-mark__svg circle:last-of-type {
+  stroke: var(--color-accent);
+  transition: stroke var(--transition);
 }
 
 .testimonial-card--featured {
