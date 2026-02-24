@@ -888,7 +888,7 @@ a {
    ======================================== */
 .image-break {
   position: relative;
-  height: 70vh;
+  height: 88vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -901,7 +901,7 @@ a {
   width: 100%;
   height: 115%;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center 45%;
   will-change: transform;
 }
 
@@ -2256,7 +2256,7 @@ a {
   }
 
   .image-break {
-    height: 50vh;
+    height: 70vh;
   }
 
   .marquee__track span {
