@@ -1758,6 +1758,29 @@ a {
   letter-spacing: 0.02em;
 }
 
+.testimonial-card--featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 40px;
+  align-items: start;
+}
+
+.testimonial-card--featured .testimonial-card__mark {
+  margin-bottom: 0;
+}
+
+.testimonial-card--featured .testimonial-card__text {
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .testimonial-card--featured {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ========================================
    ABOUT
    ======================================== */
