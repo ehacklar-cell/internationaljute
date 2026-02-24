@@ -1758,6 +1758,93 @@ a {
   letter-spacing: 0.02em;
 }
 
+/* Client logo marks */
+.client-mark {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.client-mark__circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  transition: border-color var(--transition);
+}
+
+.client-mark__circle::after {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  border: 1px solid rgba(184, 129, 74, 0.25);
+  pointer-events: none;
+}
+
+.testimonial-card:hover .client-mark__circle {
+  border-color: var(--color-accent-dark);
+}
+
+.client-mark__letter {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--color-accent);
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.client-mark__wordmark {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.client-mark__top {
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-fg);
+  line-height: 1;
+}
+
+.client-mark__bottom {
+  font-family: var(--font-body);
+  font-size: 0.54rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
+  line-height: 1;
+}
+
+/* La Colle — darker circle treatment to differentiate */
+.client-mark--la-colle .client-mark__circle {
+  border-color: var(--color-fg);
+}
+
+.client-mark--la-colle .client-mark__circle::after {
+  border-color: rgba(28, 23, 18, 0.15);
+}
+
+.client-mark--la-colle .client-mark__letter {
+  color: var(--color-fg);
+}
+
+.testimonial-card:hover .client-mark--la-colle .client-mark__circle {
+  border-color: var(--color-accent);
+}
+
 .testimonial-card--featured {
   grid-column: 1 / -1;
   display: grid;
