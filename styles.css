@@ -801,6 +801,9 @@ a {
 .products__header {
   margin-bottom: 64px;
   text-align: center;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .products .section__label {
