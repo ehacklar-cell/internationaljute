@@ -800,10 +800,6 @@ a {
 
 .products__header {
   margin-bottom: 64px;
-  text-align: center;
-  max-width: 680px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .products .section__label {
@@ -812,12 +808,6 @@ a {
   font-style: italic;
   font-weight: 400;
   letter-spacing: 0.08em;
-  padding-left: 0;
-  display: block;
-}
-
-.products .section__label::before {
-  display: none;
 }
 
 .products__grid {
