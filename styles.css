@@ -1834,11 +1834,6 @@ a {
   line-height: 1;
 }
 
-/* La Colle — SVG accent on hover */
-.testimonial-card:hover .client-mark--la-colle .client-mark__svg circle:last-of-type {
-  stroke: var(--color-accent);
-  transition: stroke var(--transition);
-}
 
 .testimonial-card--featured {
   grid-column: 1 / -1;
