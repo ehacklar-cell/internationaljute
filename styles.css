@@ -1765,6 +1765,12 @@ a {
   gap: 12px;
 }
 
+.client-mark__svg {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
 .client-mark__circle {
   width: 40px;
   height: 40px;
