@@ -118,11 +118,18 @@
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    successMsg.classList.add("visible");
-    form.reset();
-
-    setTimeout(() => {
-      successMsg.classList.remove("visible");
-    }, 5000);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form)).toString(),
+    })
+      .then(() => {
+        successMsg.classList.add("visible");
+        form.reset();
+        setTimeout(() => {
+          successMsg.classList.remove("visible");
+        }, 5000);
+      })
+      .catch(() => {});
   });
 })();

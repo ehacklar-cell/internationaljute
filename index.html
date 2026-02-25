@@ -526,7 +526,8 @@
             </li>
           </ul>
         </div>
-        <form class="contact__form reveal" id="contactForm">
+        <form class="contact__form reveal" id="contactForm" name="contact" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
           <div class="form__group">
             <input type="text" id="name" name="name" required placeholder=" ">
             <label for="name" data-fr="Nom complet" data-en="Full Name">Nom complet</label>
