@@ -1320,6 +1320,79 @@ a {
   box-shadow: 0 6px 24px rgba(31,74,56,0.35), inset 0 1px 0 rgba(255,255,255,0.1);
 }
 
+/* Fairtrade hover popup */
+.cred-badge--has-popup {
+  position: relative;
+}
+
+.cred-badge__popup {
+  position: absolute;
+  bottom: calc(100% + 20px);
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  opacity: 0;
+  pointer-events: none;
+  background: var(--color-cream);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 20px 20px 16px;
+  width: 164px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.13), 0 4px 16px rgba(0,0,0,0.06);
+  transition: opacity 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 20;
+}
+
+/* Arrow pointing down toward the badge */
+.cred-badge__popup::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 7px solid transparent;
+  border-top-color: var(--color-border);
+}
+
+.cred-badge__popup::before {
+  content: '';
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 7px solid transparent;
+  border-top-color: var(--color-cream);
+  z-index: 1;
+}
+
+.cred-badge--has-popup:hover .cred-badge__popup {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.cred-badge__popup-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.cred-badge__popup-label {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
+  border-top: 1px solid var(--color-border-light);
+  padding-top: 12px;
+  width: 100%;
+  text-align: center;
+}
+
 /* Smaller code text for 5-char ISO numbers */
 .cred-badge__code--sm {
   font-size: 1.2rem;
